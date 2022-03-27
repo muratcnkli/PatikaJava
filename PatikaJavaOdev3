@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Odev3 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        double alan,cevre,u,birinciKenar,ikinciKenar,ucuncuKenar;
+        System.out.println("Birinci Kenarı Giriniz : ");
+        birinciKenar=input.nextDouble();
+        System.out.println("İkinci Kenarı Giriniz : ");
+        ikinciKenar=input.nextDouble();
+        System.out.println("Ücüncü Kenarı Giriniz : ");
+        ucuncuKenar=input.nextDouble();
+        cevre=2*((birinciKenar+ikinciKenar+ucuncuKenar) / 2);
+        u=(birinciKenar+ikinciKenar+ucuncuKenar) / 2;
+        alan=u * (u - birinciKenar)* (u - ikinciKenar) * (u - ucuncuKenar);
+        System.out.println("Ücgenin alanı : "+alan);
+        System.out.println("Ücgenin cevresi : "+cevre);
+
+    }
+}
