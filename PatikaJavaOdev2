@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Odev1 {
+    public static void main(String[] args) {
+        double tutar,kdvTutarı;
+        Scanner input = new Scanner(System.in);
+        System.out.println("Ücret tutarını giriniz : ");
+        tutar=input.nextDouble();
+        if (tutar<1000){
+            kdvTutarı=tutar*0.18;
+            System.out.println("Kdv tutarı : "+kdvTutarı);
+
+        }
+        else {
+            kdvTutarı=tutar*0.08;
+            System.out.println("Kdv tutarı : "+kdvTutarı);
+
+        }
+    }
+}
