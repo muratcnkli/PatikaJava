@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class ManavKasa {
+    public static void main(String[] args) {
+        int armut,elma,muz,patlıcan,domates;
+        double totalPrice,priceArmut=2.14,priceElma=3.67,priceMuz=0.95,pricePatlıcan=5.00,priceDomates=1.11;
+        Scanner input = new Scanner(System.in);
+        System.out.println("Armut kaç kilo : ");
+        armut=input.nextInt();
+        System.out.println("Elma kaç kilo : ");
+        elma=input.nextInt();
+        System.out.println("Muz kaç kilo : ");
+        muz=input.nextInt();
+        System.out.println("Patlıcan kaç kilo : ");
+        patlıcan=input.nextInt();
+        System.out.println("Domates kaç kilo : ");
+        domates=input.nextInt();
+        totalPrice=armut*priceArmut+elma*priceElma+muz*priceMuz+patlıcan*pricePatlıcan+domates*priceDomates;
+        System.out.println("Toplam Fiyat : "+totalPrice);
+
+    }
+}
